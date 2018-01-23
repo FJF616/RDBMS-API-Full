@@ -24,4 +24,15 @@ module.exports = app => {
     app.delete('/users/:id', deleteUser);
 
     /***************** These are all the Posts enpoints ***************************/
-};
+    app.post('/posts', createPost);
+    app.get('/posts', getPosts);
+    app.get('/posts/:id', getPostById);
+    app.put('/posts/:id', updatePost);
+    app.delete('/posts/:id', deletePost);
+
+    /***************** These are all the Tags enpoints ***************************/
+    app.post('/tags', createTag);     
+    app.get('/tags', getTags);
+    app.get('/tags', getTagById);
+    app.put('/tags', updateTag);
+};     
