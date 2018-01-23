@@ -1,8 +1,4 @@
 const db = require('../database/db.js')
-createTag, 
-getTags,
-getTagById,
-updateTag 
   exports.getTag = function(id) {
     let query = db('tags');
     if (id) {
